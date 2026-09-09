@@ -1,0 +1,97 @@
+body{
+    background: aliceblue;
+    padding: 2rem;
+    font-family: monospace;
+    display: grid;
+    justify-content: center;
+}
+
+header{
+    font-size: larger;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1.5rem;
+    width: 73vh;
+    
+}
+
+.logo{
+    font-size: 7rem;
+    color: rgb(67, 19, 131)
+}
+.tagline{
+    color: rgb(67, 19, 131)
+}
+
+.search-section{
+    background: linear-gradient(rgba(57, 138, 192, 0.973), rgba(79, 11, 119, 0.904));
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#busca{
+    padding: .5rem;
+    margin: .3rem;
+    border-color: white;
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+}
+#busca::placeholder{
+    color: white;
+}
+
+#busca:focus{
+    border-color: rgb(41, 206, 41);
+}
+
+.job-card{
+    border: solid rgba(0, 0, 0, 0.418);
+    border-width: .18rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+.job-card__badge{
+    background-color: rgba(255, 229, 79, 0.973);
+    padding: .2rem .5rem;
+    border-radius: 4rem;
+}
+
+.job-card__title{
+    color: rgb(67, 19, 131);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.job-card__body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.job-card__body p{
+    border: solid 1.3px;
+    border-color: rgb(67, 19, 131);
+    padding: .3rem .5rem;
+    margin: .5rem .7rem;
+    border-radius: 4rem;
+    font-weight: 900;
+
+}
+
+.job-card__footer{
+    margin-top: 1rem;
+}
+
+.job-card__footer button{
+    width: 100%;
+}
