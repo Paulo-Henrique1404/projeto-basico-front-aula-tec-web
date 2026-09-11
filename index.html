@@ -19,8 +19,30 @@
 
 <main class="main">
     <section class="search-section container">
-        <label for="busca">Buscar vagas</label>
-        <input type="search" id="busca" placeholder="Ex: React, Node, Remoto ...">
+        <div id="input-div">
+            <label for="busca" id="busca-label">Buscar vagas</label>
+            <input type="search" id="busca" placeholder="Ex: React, Node, Remoto ...">
+        </div>
+        <div id="filter-section">
+            <span id="filter-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                </svg>
+            </span>
+            <div id="filters" class="filter-box" >
+                <div id="salary-filter" class="filter">
+                    <div class="filter-input">
+                        <input type="range" min="1" max="100000" value="3000" class="slider" id="minimal-salary-slider">
+                        <input type="range" min="1" max="100000" value="3000" class="slider" id="maximum-salary-slider">
+                        <label for="minimal-salary">Sal. mín</label>
+                        <input type="number" id="minimal-salary">
+                        <label for="maximum-salary">Sal. max</label>
+                        <input type="number" id="maximum-salary">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="job-section container">

@@ -15,7 +15,7 @@ header{
     border-radius: 10px;
     padding: 3rem;
     margin: 1.5rem;
-    width: 73vh;
+    
     
 }
 
@@ -33,18 +33,38 @@ header{
     font-size: large;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 73vh;
+    padding: 1rem 5rem;
+}
 
+#input-div{
+    border-radius: 3px;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+#filter-section{
+    width: 50vh;
+    display: flex;
+    align-content: end;
+    justify-content: end;
+}
+
+#filter-button:hover{
+    cursor: pointer;
 }
 
 #busca{
-    padding: .5rem;
+    padding: .6rem;
     margin: .3rem;
     border-color: white;
     border-style: solid;
     background-color: transparent;
     border-radius: 10px;
     color: white;
+    width: 70%;
+    transition: transform 1.3s ease-in-out;
 }
 #busca::placeholder{
     color: white;
@@ -52,6 +72,28 @@ header{
 
 #busca:focus{
     border-color: rgb(41, 206, 41);
+    align-self: baseline;
+    transform: scale(1.1);
+}
+
+#filter-section{
+    display: inline;
+}
+
+#filters{
+    background-color: rgba(240, 248, 255, 0.123);
+    border-radius: 5px;
+}
+
+.filter-input label{
+    padding: 1rem
+}
+.filter-input input{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: .6rem;
+    color: white;
 }
 
 .job-card{
